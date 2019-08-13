@@ -1,0 +1,88 @@
+<div prefix="mobiliteit: https://data.vlaanderen.be/ns/mobiliteit# infrastructuur: https://data.vlaanderen.be/ns/openbaardomein/infrastructuur# besluit: https://data.vlaanderen.be/ns/besluit# geosparql: http://www.opengis.net/ont/geosparql# locn: http://www.w3.org/ns/locn# xsd:http://www.w3.org/2001/XMLSchema# foaf: http://xmlns.com/foaf/0.1/">
+
+  <!-- Voorbeeld 1: Intekening van een richtingaanwijzer met 'Tongeren 20km' -->
+  <img src="http://maps.mow.vlaanderen.be/1f2ac780-78b3-4343-be79-216d1bf4ec4a">
+  <div resource="http://data.mow.vlaanderen.be/id/opstelling/732e3d56-0818-49b0-a25d-17ca8d4bf2ff" typeof="mobiliteit:Opstelling">
+    <div property="locn:geometry" resource="http://data.mow.vlaanderen.be/id/geometrie/029a0785-34d9-4535-b374-81bb37ae7e02" typeof="locn:Geometry">
+      <span property="geosparql:asWKT" datatype="geosparql:wktLiteral" content="Point (-83.4 34.0)"></span>
+    </div>
+    <div property="mobiliteit:grafischeWeergave" resource="http://maps.mow.vlaanderen.be/1f2ac780-78b3-4343-be79-216d1bf4ec4a" typeof="foaf:Image"></div>
+    <div property="mobiliteit:Opstelling.operationeleStatus" resource="http://data.vlaanderen.be/id/opstelling-operationele-status/gepland"></div>
+    <div property="mobiliteit:omvatVerkeersbord" resource="http://data.mow.vlaanderen.be/id/verkeersbord/20789237-5fb7-4ad4-afeb-379fb1e1e961" typeof="infrastructuur:Verkeersbord">
+      <div property="mobiliteit:Verkeersbord.operationeleStatus" resource="http://data.vlaanderen.be/id/verkeersbord-operationele-status/gepland"></div>
+      <div property="mobiliteit:realiseert" resource="http://data.lblod.info/id/verkeersteken/15f52c4e-3545-4a79-9452-da07418fcbcf" typeof="mobiliteit:Verkeersbord-Verkeersteken mobiliteit:Verkeersteken">
+        <div property="mobiliteit:heeftVerkeersbordconcept" resource="http://data.vlaanderen.be/id/verkeersbordconcept/5677117a-7fb2-4c40-9737-a197e7551c70" typeof="mobiliteit:Verkeersbordconcept">
+          F29 <!-- URI komt uit codelijst Verkeersbordconcepten die aangeleverd zal worden -->
+        </div>
+          <div property="mobiliteit:variabelOpschrift">Tongeren 20</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Voorbeeld 2: Intekening van een begin en einde zone 30 -->
+  <img src="http://maps.mow.vlaanderen.be/66f93988-1cfe-48b5-a8a6-a754c6b13bc4">
+  <div resource="http://data.mow.vlaanderen.be/id/opstelling/b421ed5e-c0e6-4de4-9688-26f2fc4839af" typeof="mobiliteit:Opstelling">
+    <div property="locn:geometry" resource="http://data.mow.vlaanderen.be/id/geometrie/c2de8121-284b-4243-9bff-3d3bf4d54279" typeof="locn:Geometry">
+      <span property="geosparql:asWKT" datatype="geosparql:wktLiteral" content="Point (-82.4 32.0)"></span>
+    </div>
+    <div property="mobiliteit:grafischeWeergave" resource="http://maps.mow.vlaanderen.be/b421ed5e-c0e6-4de4-9688-26f2fc4839af" typeof="foaf:Image"></div>
+    <div property="mobiliteit:Opstelling.operationeleStatus" resource="http://data.vlaanderen.be/id/opstelling-operationele-status/gepland"></div>
+    <div property="mobiliteit:omvatVerkeersbord" resource="http://data.mow.vlaanderen.be/id/verkeersbord/94d4a016-ed37-4f54-91d6-b4966f74ebfa" typeof="infrastructuur:Verkeersbord">
+      <div property="mobiliteit:Verkeersbord.operationeleStatus" resource="http://data.vlaanderen.be/id/verkeersbord-operationele-status/gepland"></div>
+      <div property="mobiliteit:realiseert" resource="http://data.lblod.info/id/verkeersteken/7f6e6111-81c6-4bfb-9118-bb51ec1fbf26" typeof="mobiliteit:Verkeersbord-Verkeersteken mobiliteit:Verkeersteken">
+        <div property="mobiliteit:heeftVerkeersbordconcept" resource="http://data.vlaanderen.be/id/verkeersbordconcept/80753115-d27a-4a85-be31-72ca31c6bfaa" typeof="mobiliteit:Verkeersbordconcept">
+          F4a <!-- URI komt uit codelijst Verkeersbordconcepten die aangeleverd zal worden -->
+        </div>
+        <div property="mobiliteit:isBeginZone" content="true" datatype="xsd:boolean"></div>
+      </div>
+    </div>
+  </div>
+  <div resource="http://data.mow.vlaanderen.be/id/opstelling/e31a7f0a-942d-4c06-85a8-4b89a845832f" typeof="mobiliteit:Opstelling">
+    <div property="locn:geometry" resource="http://data.mow.vlaanderen.be/id/geometrie/bfa5f59d-99cb-4467-998c-fd19bc241c0a" typeof="locn:Geometry">
+      <span property="geosparql:asWKT" datatype="geosparql:wktLiteral" content="Point (-77.4 32.0)"></span>
+    </div>
+    <div property="mobiliteit:grafischeWeergave" resource="http://maps.mow.vlaanderen.be/b421ed5e-c0e6-4de4-9688-26f2fc4839af" typeof="foaf:Image"></div>
+    <div property="mobiliteit:Opstelling.operationeleStatus" resource="http://data.vlaanderen.be/id/opstelling-operationele-status/gepland"></div>
+    <div property="mobiliteit:omvatVerkeersbord" resource="http://data.mow.vlaanderen.be/id/verkeersbord/6ef6fd81-3dc8-4ec6-a47d-2756537d2524" typeof="infrastructuur:Verkeersbord">
+      <div property="mobiliteit:Verkeersbord.operationeleStatus" resource="http://data.vlaanderen.be/id/verkeersbord-operationele-status/gepland"></div>
+      <div property="mobiliteit:realiseert" resource="http://data.lblod.info/id/verkeersteken/14b4bd75-a72c-4fd7-99bf-db3c5d094ae9" typeof="mobiliteit:Verkeersbord-Verkeersteken mobiliteit:Verkeersteken">
+        <div property="mobiliteit:heeftVerkeersbordconcept" resource="http://data.vlaanderen.be/id/verkeersbordconcept/aa557711-6f1a-4fb6-933c-6ae0fa5601db" typeof="mobiliteit:Verkeersbordconcept">
+          F4b <!-- URI komt uit codelijst Verkeersbordconcepten die aangeleverd zal worden -->
+        </div>
+        <div property="mobiliteit:isEindeZone" content="true" datatype="xsd:boolean"></div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Voorbeeld 3: Intekening van bord snelheid 50 met onderbord 'Herhaling'-->
+  <img src="http://maps.mow.vlaanderen.be/9a612330-f197-4ac4-b1d8-9c4dc297a06a">
+  <div resource="http://data.mow.vlaanderen.be/id/opstelling/d1f9098c-5d5e-41fd-88cd-244886c3e930" typeof="mobiliteit:Opstelling">
+    <div property="locn:geometry" resource="http://data.mow.vlaanderen.be/id/geometrie/3a48aa5d-6e05-4c65-8e00-c28bcec84657" typeof="locn:Geometry">
+      <span property="geosparql:asWKT" datatype="geosparql:wktLiteral" content="Point (-13.4 23.0)"></span>
+    </div>
+    <div property="mobiliteit:grafischeWeergave" resource="http://maps.mow.vlaanderen.be/9a612330-f197-4ac4-b1d8-9c4dc297a06a" typeof="foaf:Image"></div>
+    <div property="mobiliteit:Opstelling.operationeleStatus" resource="http://data.vlaanderen.be/id/opstelling-operationele-status/gepland"></div>
+    <div property="mobiliteit:omvatVerkeersbord" resource="http://data.mow.vlaanderen.be/id/verkeersbord/b1f03f33-0e68-457f-9760-f7275e0b6b18" typeof="infrastructuur:Verkeersbord">
+      <div property="mobiliteit:Verkeersbord.operationeleStatus" resource="http://data.vlaanderen.be/id/verkeersbord-operationele-status/gepland"></div>
+      <div property="mobiliteit:realiseert" resource="http://data.lblod.info/id/verkeersteken/cea5433b-aa89-43ae-b44d-588e4052ccba" typeof="mobiliteit:Verkeersbord-Verkeersteken mobiliteit:Verkeersteken">
+        <div property="mobiliteit:heeftVerkeersbordconcept" resource="http://data.vlaanderen.be/id/verkeersbordconcept/6f1d7198-39db-481f-8cc3-f7fafba148d1" typeof="mobiliteit:Verkeersbordconcept">
+          C43-50 <!-- URI komt uit codelijst Verkeersbordconcepten die aangeleverd zal worden -->
+        </div>
+        <div property="mobiliteit:heeftOnderbord" resource="http://data.lblod.info/id/verkeersteken/4f235baa-6ad7-45b8-b2a4-67d78251521c" typeof="mobiliteit:Verkeersbord-Verkeersteken mobiliteit:Verkeersteken">
+          <!-- het onderbord wordt hierna verder beschreven als onderdeel van de Opstelling -->
+        </div>
+      </div>
+    </div>
+    <div property="mobiliteit:omvatVerkeersbord" resource="http://data.mow.vlaanderen.be/id/verkeersbord/c0c9f928-743d-47c6-9936-5c2aae636a0e" typeof="infrastructuur:Verkeersbord">
+      <div property="mobiliteit:Verkeersbord.operationeleStatus" resource="http://data.vlaanderen.be/id/verkeersbord-operationele-status/gepland"></div>
+      <!-- het onderbord waarnaar hierboven verwezen wordt -->
+      <div property="mobiliteit:realiseert" resource="http://data.lblod.info/id/verkeersteken/4f235baa-6ad7-45b8-b2a4-67d78251521c" typeof="mobiliteit:Verkeersbord-Verkeersteken mobiliteit:Verkeersteken">
+        <div property="mobiliteit:heeftVerkeersbordconcept" resource="http://data.vlaanderen.be/id/verkeersbordconcept/1f9a7c12-3510-424e-8a8d-8bff4eaf4e66" typeof="mobiliteit:Verkeersbordconcept">
+          GVI <!-- URI komt uit codelijst Verkeersbordconcepten die aangeleverd zal worden -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
